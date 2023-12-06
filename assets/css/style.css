@@ -1,0 +1,115 @@
+.styleCard {
+    background-color: white;    
+    transition: transform 0.12s ease-in-out;
+    border: solid .1px #333;
+    box-shadow: -1px 1px #333;
+    width: 280px;
+    height: 380px;
+}
+
+.styleCard:hover {
+    transform: translate(5px, -5px);
+    border-radius: 10px;
+}
+
+.styleCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.12s ease-in-out;
+    border-radius: 10px;
+
+}
+
+.styleCard:hover::before {
+    transform: translate(-5px, 5px);
+    box-shadow: -5px 5px #333;
+
+}
+
+
+/* .buttonBuy {
+    position: relative;
+    width: auto;
+    background-color: white;
+    margin: 20px;
+    transition: transform 0.12s ease-in-out;
+    border: solid .1px #333;
+    box-shadow: -1px 1px #333;
+
+}
+
+.buttonBuy:hover {
+    transform: translate(5px, -5px);
+    border-radius: 10px;
+}
+
+.buttonBuy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.12s ease-in-out;
+    border-radius: 10px;
+
+}
+
+.buttonBuy:hover::before {
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px #333;
+
+} */
+.buttonBuy {
+    height: auto;
+    width: auto;
+    background: #ffffff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #55405d 1px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465B, 
+                 5px  5px 15px #41465B, 
+      inset      5px  5px 10px #212121, 
+      inset     -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465B, 
+                 5px  5px 15px #41465B, 
+      inset      5px  5px 10px #212121, 
+      inset     -5px -5px 10px #212121;
+  }
+  
+  .buttonBuy:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e,
+                      -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e,
+               -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  .buttonBuy:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e,
+                       -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e,
+               -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
